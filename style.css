@@ -8,7 +8,7 @@
 body{background: #f0f2f5;}
 :root{
     --mainColor:#1877f2;
-    --buttunColor:#42b72a;
+    --buttonColor:#42b72a; /* Fixed typo */
 }
 .container{
     padding: 0 10px;
@@ -104,8 +104,17 @@ form .create:hover{
 }
 /* small size */
 @media (max-width:540px) {.text p{display: none;}  }
+/* Responsive font sizes for smaller screens */
+@media (max-width: 540px) {
+    .text h1 {
+        font-size: 2.5em;
+    }
+    .text p {
+        display: none;
+    }
+}
 /* tablet and above */
-@media (min-width:930px){
+@media (min-width:768px){
     .container{
         display: flex;
         justify-content: space-between;
